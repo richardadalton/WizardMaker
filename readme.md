@@ -25,18 +25,14 @@ Create a WizardControler as follows:
 
 The Wizard object represents a specific Wizard.  A Wizard can be instantiated, and steps added as follows:
 
-'''vb.net
         var wizard = new Wizard();
         wizard.AddStep(new Step1())
               .AddStep(new Step2());
-'''
 
 Step1 and Step2 above are forms that inherit from WizardStep
 
 Once the steps have been added you can use the Controller to start the Wizard:
 
-'''vb.net
         controller.Start(wizard);
-''' 
 
 
